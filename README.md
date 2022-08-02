@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# 🤖 MultistepForm
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- ℹ️ [General info](#general-info)
+- 🎉[Project overview](#project-overview)
+- 📖 [What I learned during this project?](#what-i-learned-during-this-project)
+- ⚙️ [Technologies](#technologies)
+- 📷 [Screenshots](#screenshots)
+- 💾 [Installation](#installation)
+- 📜 [Available scripts](#available-scripts)
+- 🔴 [Live](#live)
 
-In the project directory, you can run:
+## ℹ️ General info
 
-### `npm start`
+MultistepForm in React using (Formik, react-hook-form, own script)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🎉 Project Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This is an application that was intended to teach me how to use the tools, i.e. Formik, or react-hook-form, and recreate the multistep form logic myself.
 
-### `npm test`
+## 📖 What I learned during this project?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The biggest problem with this application was understanding how the application is supposed to work and how the form state is supposed to be passed. Another problem was handling form errors
 
-### `npm run build`
+## ⚙️ Technologies used in project:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Tech                                           | Description                                             |
+| ---------------------------------------------- | ------------------------------------------------------- |
+| [React](https://reactjs.org/)                  | A JavaScript library for building user interfaces       |
+| [Typescript](https://www.typescriptlang.org/)  | Javascript superset language                            |
+| [Formik](https://formik.org)                   | Most popular open source form library for React         |
+| [React-hook-form](https://react-hook-form.com) | Library that helps you validate forms in React          |
+| [Yup](https://github.com/jquense/yup)          | Schema builder for runtime value parsing and validation |
+| [Sass](https://sass-lang.com/)                 | Css extension                                           |
+| [Eslint](https://eslint.org/)                  | Javascript Linter                                       |
+| [Prettier](https://prettier.io/)               | Code formatter                                          |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📷 Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💾 Installation
 
-### `npm run eject`
+To run this project, install it locally using npm:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+git clone
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 📜 Available scripts
 
-## Learn More
+| Command         | Description            |
+| --------------- | ---------------------- |
+| `npm start`     | Start local server     |
+| `npm run build` | Create optimized build |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔴 Live
