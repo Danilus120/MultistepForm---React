@@ -21,7 +21,7 @@ This is an application that was intended to teach me how to use the tools, i.e. 
 
 ## 📖 What I learned during this project?
 
-The biggest problem with this application was understanding how the application is supposed to work and how the form state is supposed to be passed. Another problem was handling form errors
+The biggest problem with this application was understanding how the application is supposed to work and how the form state is supposed to be passed. Another problem was handling form errors. Finally, learning to work with Formik, Yup and react-hook-form documentation
 
 ## ⚙️ Technologies used in project:
 
@@ -37,6 +37,10 @@ The biggest problem with this application was understanding how the application 
 | [Prettier](https://prettier.io/)               | Code formatter                                          |
 
 ## 📷 Screenshots
+
+<p align="center">
+    <img src="screenshots/1.png" alt="Screen Shot">
+</p>
 
 ## 💾 Installation
 
