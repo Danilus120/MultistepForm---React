@@ -16,7 +16,7 @@ export default function MultistepForm() {
   return (
     <div className="modal">
       <div className="modal__header">
-        <h1 className="modal__title">Multistep Form {step}</h1>
+        <h1 className="modal__title">My Form</h1>
       </div>
       <div className="modal__body">
         <form onSubmit={handleSubmit}>

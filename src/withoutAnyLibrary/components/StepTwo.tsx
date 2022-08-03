@@ -1,16 +1,13 @@
-import { FormStateI } from '../types/useMultistepFormInterfaces'
+import { FormStateI } from "../types/useMultistepFormInterfaces";
+import Input from "./Input";
 
 interface StepI {
-    formState: FormStateI
-    handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  formState: FormStateI;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function StepOne({ formState, handleChange }: StepI) {
-    return (
-        <>
-            <label htmlFor="age">Age: </label>
-            <input type="number" id="age" name="age" onChange={handleChange} />
-            {formState.errors.step2.age && `${formState.errors.step2.age}`}
-        </>
-    )
+  return (
+    <Input formState={formState} handleChange={handleChange} name={"age"} />
+  );
 }

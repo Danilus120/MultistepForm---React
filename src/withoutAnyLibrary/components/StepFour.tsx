@@ -1,22 +1,17 @@
-import { FormStateI } from '../types/useMultistepFormInterfaces'
+import { FormStateI } from "../types/useMultistepFormInterfaces";
+import Input from "./Input";
 
 interface StepI {
-    formState: FormStateI
-    handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  formState: FormStateI;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function StepOne({ formState, handleChange }: StepI) {
-    return (
-        <>
-            <label htmlFor="password">Password: </label>
-            <input
-                type="password"
-                id="password"
-                name="password"
-                onChange={handleChange}
-            />
-            {formState.errors.step4.password &&
-                `${formState.errors.step4.password}`}
-        </>
-    )
+  return (
+    <Input
+      formState={formState}
+      handleChange={handleChange}
+      name={"password"}
+    />
+  );
 }

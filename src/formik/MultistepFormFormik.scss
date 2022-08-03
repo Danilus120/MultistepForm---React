@@ -1,4 +1,4 @@
-.modal {
+.formikWrapper {
   //   width: 400px;
   // height: 800px;
 
@@ -50,10 +50,10 @@
   }
 
   form {
-    width: 100%;
+    width: 60%;
   }
 
-  .inputWrapper {
+  .inputFormikWrapper {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;

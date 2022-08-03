@@ -4,6 +4,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import ModalContent from "./components/ModalContent";
 import ModalButton from "./components/ModalButton";
 
+import "./MultistepFormReactFormHook.scss";
+
 interface IFormInput {
   name: string;
   age: string;
@@ -36,7 +38,10 @@ export default function MultistepFormReactFormHook() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)} className="reactFormHookWrapper">
+        <div className="reactFormHookWrapper__header">
+          <h1>React Hook Form</h1>
+        </div>
         <ModalContent step={step} register={register} errors={errors} />
         <ModalButton step={step} nextStep={nextStep} />
       </form>

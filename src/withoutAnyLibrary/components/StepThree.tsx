@@ -1,21 +1,13 @@
-import { FormStateI } from '../types/useMultistepFormInterfaces'
+import { FormStateI } from "../types/useMultistepFormInterfaces";
+import Input from "./Input";
 
 interface StepI {
-    formState: FormStateI
-    handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  formState: FormStateI;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function StepOne({ formState, handleChange }: StepI) {
-    return (
-        <>
-            <label htmlFor="email">Email: </label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                onChange={handleChange}
-            />
-            {formState.errors.step3.email && `${formState.errors.step3.email}`}
-        </>
-    )
+  return (
+    <Input formState={formState} handleChange={handleChange} name={"email"} />
+  );
 }

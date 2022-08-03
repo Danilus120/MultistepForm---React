@@ -48,8 +48,6 @@ export const useMultistepForm = (): useMultistepFormI => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
-    const formStep = `step${formState.step}`; // X
-
     setFormState({
       // prev
       ...formState,
@@ -75,8 +73,6 @@ export const useMultistepForm = (): useMultistepFormI => {
       (acc: Record<string, string>, [key, value]) => {
         const errorMessage = validatorInput[key](value);
         return { ...acc, [key]: errorMessage };
-        // acc[key] = errorMessage
-        // return acc
       },
       {}
     );
