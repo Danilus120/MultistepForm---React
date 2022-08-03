@@ -47,7 +47,7 @@ The biggest problem with this application was understanding how the application 
 To run this project, install it locally using npm:
 
 ```
-git clone
+git clone https://github.com/Danilus120/MultistepForm-React.git
 
 npm install
 
